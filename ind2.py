@@ -94,7 +94,7 @@ if __name__ == '__main__':
         parts = command.split(' ', maxsplit=1)
         # Сохранить данные в файл JSON.
         with open(parts[1], 'w') as f:
-            json.dump(peoples, f)
+            json.dump(peoples, f, ensure_ascii=False)
 
 
     def help():
